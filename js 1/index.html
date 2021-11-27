@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpo1rt" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,c,x1,x2;
+        a=prompt("nhap a=");
+        b=prompt("nhap b=");
+        c=prompt("nhap c=");
+        var d=b*b- 4*a*c;
+        if (d<0) document.write("Phuong trinh vo nghiem");
+        else if (d==0) {
+            x1=-1*b/(2*a);
+            document.write("phuong trinh co 1 nghiem = ",x1);
+        }
+        else {
+            x1=(-1*b-Math.sqrt(d))/(2*a);
+            x2=(-1*b+Math.sqrt(d))/(2*a);
+            document.write('nghiem 1 la ',x1);
+            document.write('</br>');
+            document.write('nghiem 2 la ',x2);
+        }
+    </script>
+</body>
+</html>
